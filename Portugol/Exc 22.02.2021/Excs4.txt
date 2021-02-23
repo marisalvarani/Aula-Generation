@@ -1,0 +1,83 @@
+1)
+programa
+{
+	
+	funcao inicio()
+	{
+		inteiro pontos[5], a=0, b=0
+
+		para(inteiro x=1;x<=5;x++){
+			escreva("Pontuação ",x," = ")
+			leia(pontos[x-1])
+			a=pontos[x-1]
+			a=b
+			se(pontos[x-1]>b){
+				b = pontos[x-1]				
+				
+			}
+		}
+		escreva(b)
+	}
+}
+
+----------------------------------------------------------------
+
+2)
+programa
+{
+	
+	funcao inicio()
+	{
+		inteiro dado[10], a=0, b=0 
+		real media, soma = 0
+		
+
+		para(inteiro x=1;x<=10;x++){
+			escreva("Lançamento ",x," = ")
+			leia(dado[x-1])
+			soma = soma + dado[x-1]
+			a=dado[x-1]
+			a=b
+			se(dado[x-1]>b){
+				b = dado[x-1]
+				
+			}
+			
+		}
+		
+		media = soma/10
+		escreva("Media = ", media, "\n")
+		
+	}
+}
+
+----------------------------------------------------------------
+
+4)
+programa
+{
+	
+	funcao inicio()
+	{
+		inteiro mat[3][3],l,c,soma=0, somaDiag
+		para(l=0;l<3;l++){
+			para(c=0;c<3;c++){
+				escreva("valor: ")
+				leia(mat[l][c])
+			}
+		}
+		para(l=0;l<3;l++){
+			para(c=0;c<3;c++){
+				escreva("[ ",mat[l][c]," ]")
+				soma = soma + mat[l][c]
+				
+			}
+			escreva("\n")
+			
+		}
+		somaDiag = mat[0][0]+mat[1][1]+mat[2][2]
+		escreva("Soma valores totais = ",soma,"\n")
+		escreva("Soma valores diagonais = ",somaDiag)
+		
+	}
+}

@@ -1,0 +1,194 @@
+1)
+programa
+{
+	
+	funcao inicio()
+	{
+		inteiro anos
+		inteiro meses
+		inteiro dias
+		inteiro totalDias
+		escreva("Anos = ")
+		leia(anos)
+		escreva("Meses = ")
+		leia(meses)
+		escreva("Dias = ")
+		leia(dias)
+		totalDias = (anos*365) + (meses*30) + dias
+		escreva("Dias totais = ", totalDias)
+	}
+}
+
+-------------------------------------------------------------------------------------------
+
+2)
+programa
+{
+	
+	funcao inicio()
+	{
+		inteiro totalDias
+		inteiro anos
+		inteiro meses
+		inteiro dias
+		escreva("Total de dias = ")
+		leia(totalDias)
+		anos = totalDias/365
+		meses = (totalDias%365)/30
+		dias = (totalDias%365)%30
+		escreva(anos, " Anos ", meses, " Meses ", dias, " Dias.")
+	}
+}
+
+-------------------------------------------------------------------------------------------
+
+3)
+programa
+{
+	
+	funcao inicio()
+	{
+		inteiro segundosTotais
+		inteiro segundos
+		inteiro minutos
+		inteiro horas
+		escreva("Total em segundos = ")
+		leia(segundosTotais)
+		horas = segundosTotais/3600
+		minutos = (segundosTotais%3600)/60
+		segundos = (segundosTotais%3600)%60
+		escreva(horas, " Horas ", minutos, " Minutos ", segundos, " Segundos ")
+	}
+}
+
+-------------------------------------------------------------------------------------------
+
+4)
+programa
+{
+	inclua biblioteca Matematica
+	
+	funcao inicio()
+	{
+		real A
+		real B
+		real C
+		real D
+		real R
+		real S
+		escreva("A = ")
+		leia(A)
+		escreva("B = ")
+		leia(B)
+		escreva("C = ")
+		leia(C)
+		R = Matematica.potencia((A+B), 2)
+		S = Matematica.potencia((B+C), 2)
+		D = (R+S)/2
+		escreva("D = ", D)
+	}
+}
+
+-------------------------------------------------------------------------------------------
+
+5)
+programa
+{
+	
+	funcao inicio()
+	{
+		real primeiraNota
+		real segundaNota
+		real terceiraNota
+		real media
+		escreva("Primeira nota = ")
+		leia(primeiraNota)
+		escreva("Segunda nota = ")
+		leia(segundaNota)
+		escreva("Terceira nota = ")
+		leia(terceiraNota)
+		media = ((primeiraNota*2)+(segundaNota*3)+(terceiraNota*5))/10
+		escreva("A média do aluno é = ", media)
+	}
+}
+
+------------------------------------------------------------------------------------------------------------------------
+
+6)
+programa
+{
+	inclua biblioteca Matematica
+	
+	funcao inicio()
+	{
+		real x1
+		real y1
+		real x2
+		real y2
+		real d
+		escreva("x1 = ")
+		leia(x1)
+		escreva("y1 = ")
+		leia(y1)
+		escreva("x2 = ")
+		leia(x2)
+		escreva("y2 = ")
+		leia(y2)
+		
+		d = Matematica.raiz(((Matematica.potencia((x2 - x1),2)) + (Matematica.potencia((y2 - y1), 2))), 2)
+		escreva("d = ", d)
+	}
+}
+
+------------------------------------------------------------------------------------------------------------------------
+
+7)
+programa
+{
+	
+	funcao inicio()
+	{
+		real A
+		real B
+		real C
+		real D
+		real E
+		real F
+		real x
+		real y
+		escreva("a = ")
+		leia(A)
+		escreva("b = ")
+		leia(B)
+		escreva("c = ")
+		leia(C)
+		escreva("d = ")
+		leia(D)
+		escreva("e = ")
+		leia(E)
+		escreva("f = ")
+		leia(F)
+		x = ((C*E)-(B*F))/((A*E)-(B*D))
+		y = ((A*F)-(C*D))/((A*E)-(B*D))
+		escreva("x = ", x, " e y = ", y)
+	}
+}
+
+-------------------------------------------------------------------------------------------
+
+8)
+programa
+{
+	
+	funcao inicio()
+	{
+		real custoFabrica
+		real custoConsumidor
+		escreva("Custo de fábrica = ")
+		leia(custoFabrica)
+		custoConsumidor = custoFabrica + (custoFabrica*0.28) + (custoFabrica*0.45)
+		escreva("Custo ao consumidor = ", custoConsumidor, " reais.")
+	}
+}
+
+

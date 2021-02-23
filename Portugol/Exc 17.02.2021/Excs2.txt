@@ -1,0 +1,210 @@
+1)
+programa
+{
+	
+	funcao inicio()
+	{
+		real P, E, M
+		escreva("Peso = ")
+		leia(P)
+		E = P - 50
+		se (E>0) {
+			M = E*4
+			escreva("Excesso de peso = ", E, " quilos e multa = ", M, " reais.")
+		}
+		senao{
+			escreva("Excesso de peso = ZERO  e multa = ZERO.")
+		}
+	}
+}
+
+---------------------------------------------------------------------------------------------------------------------------------
+
+2)
+programa
+{
+	
+	funcao inicio()
+	{
+		real C, N, E, S
+		escreva("Código = ")
+		leia(C)
+		escreva("Número de horas trabalhadas = ")
+		leia(N)
+		se(N>50){
+			E = (N-50)*20
+			S = E + (50*10)
+		}
+		senao{
+			S = N*10
+			E = 0
+		}
+		escreva("O salário total é igual a ", S, " reais e o salário excedente é igual a ", E, " reais.")
+	}
+}
+
+---------------------------------------------------------------------------------------------------------------------------------
+
+3)
+programa
+{
+	inclua biblioteca Matematica
+	
+	funcao inicio()
+	{
+		inteiro n1, n2, n3, n4, q1, q2, q3, q4
+		escreva("Digite o primeiro número = ")
+		leia(n1)
+		escreva("Digite o segundo número = ")
+		leia(n2)
+		escreva("Digite o terceiro número = ")
+		leia(n3)
+		escreva("Digite o quarto número = ")
+		leia(n4)
+		q1 = Matematica.potencia(n1, 2)
+		q2 = Matematica.potencia(n2, 2)
+		q3 = Matematica.potencia(n3, 2)
+		q4 = Matematica.potencia(n4, 2)
+		se (q3 >= 1000){
+			escreva(q3)
+		}
+		senao{
+			escreva("Número 1: ",n1," e seu quadrado é ", q1)
+			escreva("\nNúmero 2: ", n2, " e seu quadrado é ", q2)
+			escreva("\nNúmero 3:", n3," e seu quadrado é ", q3)
+			escreva("\nNúmero 4:", n4," e seu quadrado é ", q4)
+		}
+		
+		
+	}
+}
+
+---------------------------------------------------------------------------------------------------------------------------------
+
+4)
+programa
+{
+	
+	funcao inicio()
+	{
+		inteiro numero
+		escreva("Digite um número: ")
+		leia(numero)
+		se (numero%2 == 0) 
+		{
+			escreva("O número ", numero, " é par")
+		}
+		senao  
+		{
+			escreva("O número ", numero, " é ímpar")
+		}
+		se (numero >= 0) {
+			escreva("\nO número ", numero, " é positivo")
+		}
+		senao {
+			escreva("\nO número ", numero, " é negativo")
+		}
+	}
+}
+
+---------------------------------------------------------------------------------------------------------------------------------
+
+5)
+programa
+{
+	
+	funcao inicio()
+	{
+		real indice
+		escreva("Índice de poluição = ")
+		leia(indice)
+		se(indice>= 0.05 e indice <=0.25){
+			escreva("Índice de poluição aceitável")
+		}
+		senao se(indice>= 0.3 e indice < 0.4){
+			escreva("Indústrias do primeiro grupo devem suspender suas atividades")
+		}
+		senao se(indice>= 0.4 e indice < 0.5){
+			escreva("Indústrias do primeiro e segundo grupo devem suspender suas atividades")
+		}
+		senao se(indice>= 0.5){
+			escreva("Indústrias de todos os grupos devem suspender suas atividades")
+		}
+	}
+}
+
+---------------------------------------------------------------------------------------------------------------------------------
+
+6)
+programa
+{
+	
+	funcao inicio()
+	{
+		inteiro idade
+		escreva("Idade = ")
+		leia(idade)
+		se (idade >= 5 e idade <= 7){
+			escreva("Infantil A")
+		}
+		senao se (idade >= 8 e idade <= 11){
+			escreva("Infantil B")
+		}
+		senao se (idade >= 12 e idade <= 13){
+			escreva("Juvenil A")
+		}
+		senao se (idade >= 14 e idade <= 17){
+			escreva("Juvenil B")
+		}
+		senao se (idade >= 18){
+			escreva("Adulto")
+		}
+
+		
+		
+	}
+}
+
+---------------------------------------------------------------------------------------------------------------------------------
+
+7)
+programa
+{
+	
+	funcao inicio()
+	{
+		inteiro b
+		inteiro h
+		inteiro area
+		escreva("base = ")
+		leia(b)
+		escreva("altura = ")
+		leia(h)
+		se (b > 0 e h > 0) {
+			area = (b*h)/2
+			escreva("área do triângulo = ", area)
+			
+		}
+	}
+}
+
+---------------------------------------------------------------------------------------------------------------------------------
+
+8)
+programa
+{
+	
+	funcao inicio()
+	{
+		inteiro N
+		escreva("Variável numérica = ")
+		leia(N)
+		se (N>100){
+			escreva(N)
+		}
+		senao{
+			N = 0
+			escreva(N)
+		}
+	}
+}
